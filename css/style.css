@@ -1,0 +1,41 @@
+/* 5. CSS 기초 - 미션1: 전체 테마 및 텍스트 Styling */
+
+/* 2) 구글 폰트 불러오기 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/* 3) 전체 글꼴 / 줄간격 / 색 / 배경색 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.7;
+  color: #333333;
+  background-color: #eef1f6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 4) 제목 강조 */
+h1 {
+  color: #2c3e50;
+  font-size: 28px;
+  padding: 10px 0;
+  border-bottom: 3px solid #4a90d9;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 22px;
+  padding: 8px 12px;
+  background-color: #eaf2fb;
+  border-left: 6px solid #4a90d9;
+}
+
+/* 5) 링크 스타일 */
+a {
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

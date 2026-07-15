@@ -9,9 +9,18 @@ body {
   line-height: 1.7;
   color: #333333;
   background-color: #eef1f6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 미션2-1) 전체 콘텐츠를 가운데 정렬하는 컨테이너 */
+.container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* 4) 제목 강조 */
@@ -38,4 +47,52 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* 미션2-2) myTrip - 여행 리뷰 카드 (박스 모델: 배경/테두리/패딩/마진) */
+.trip-card {
+  background-color: #fafbfc;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 0 0 20px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* 이미지 / 영상 크기 (HTML width 속성 대체) */
+img {
+  max-width: 320px;
+  height: auto;
+  border-radius: 4px;
+}
+
+video {
+  max-width: 320px;
+}
+
+.trip-card figcaption {
+  margin-top: 8px;
+  font-weight: 700;
+  color: #555555;
+}
+
+/* 미션2-3) myClass - 깔끔한 테이블 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #eaf2fb;
+  color: #2c3e50;
+}
+
+tbody tr:hover {
+  background-color: #f5f9ff;
 }

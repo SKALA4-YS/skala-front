@@ -218,3 +218,22 @@ input[type="reset"] {
 input[type="reset"]:hover {
   background-color: #838e9a;
 }
+
+/* 미션5) 반응형 웹 디자인 - 화면 폭 786px 이하(스마트폰) 대응 */
+@media (max-width: 786px) {
+  /* 5-1a) 본문|사이드바 2단 → 세로 1열 */
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  /* 5-1b) 바로가기 메뉴 가로 → 세로 1열 정렬 */
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* 5-2) myTrip - 여행 카드 3열 → 1열 */
+  .trip-grid {
+    grid-template-columns: 1fr;
+  }
+}

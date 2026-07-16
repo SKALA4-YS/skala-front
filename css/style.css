@@ -244,6 +244,19 @@ header h1 {
   animation: fadeInDown 1s ease-out;
 }
 
+/* 실시간 날씨 결과 박스 */
+#weather-box:not(:empty) {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: 1px dashed #9aa5b1;
+  border-radius: 8px;
+}
+
+#weather-box h3 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+}
+
 /* 업다운 게임 시작 버튼 */
 aside section button {
   display: block;

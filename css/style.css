@@ -43,6 +43,7 @@ h2 {
 a {
   color: #2b6cb0;
   text-decoration: none;
+  transition: color 0.25s ease, background-color 0.25s ease;
 }
 
 a:hover {
@@ -57,6 +58,13 @@ a:hover {
   padding: 15px;
   margin: 0 0 20px 0;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* 미션6-2) 카드에 마우스 올리면 살짝 떠오르고 그림자 진해짐 */
+.trip-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* 이미지 / 영상 크기 (HTML width 속성 대체) */
@@ -201,6 +209,7 @@ input[type="reset"] {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.25s ease;
 }
 
 input[type="submit"] {
@@ -217,6 +226,22 @@ input[type="reset"] {
 
 input[type="reset"]:hover {
   background-color: #838e9a;
+}
+
+/* 미션6-3) 페이지 로드 시 헤더 타이틀 페이드인 등장 애니메이션 */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  animation: fadeInDown 1s ease-out;
 }
 
 /* 미션5) 반응형 웹 디자인 - 화면 폭 786px 이하(스마트폰) 대응 */

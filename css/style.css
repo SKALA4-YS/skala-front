@@ -105,6 +105,30 @@ tbody tr:hover {
   background-color: #f5f9ff;
 }
 
+/* myClass - 오늘 요일 열/헤더 강조 */
+.today-col {
+  background-color: #fff6d6; /* col 배경은 셀 뒤로 깔림 (rowspan/colspan 무관) */
+}
+
+.today-th {
+  background-color: #ffd54a; /* 오늘 요일 헤더는 진하게 (class가 th보다 우선) */
+  color: #2c3e50;
+}
+
+#today-note {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* 모바일에서 표가 좁아지면 가로 스크롤로 (열이 많아 찌그러지는 것 방지) */
+.table-scroll {
+  overflow-x: auto;
+}
+
+.table-scroll table {
+  min-width: 600px;
+}
+
 /* signUpResult - 가입 정보 요약표 (항목 | 내용 2열) */
 .summary-table th {
   width: 130px;

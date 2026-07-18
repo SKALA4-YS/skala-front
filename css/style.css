@@ -336,6 +336,56 @@ header h1 {
   color: #2c3e50;
 }
 
+/* 업다운 게임 - 입력 줄 / 힌트 / 시도 기록 */
+.ud-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ud-input-row input {
+  width: 90px;
+  padding: 8px;
+  border: 1px solid #c5ced8;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* 게임 버튼 공용 스타일(block/margin-top)을 이 줄에서만 인라인처럼 정렬 */
+.ud-input-row button {
+  margin-top: 0;
+}
+
+.ud-hint {
+  min-height: 1.2em; /* 힌트가 없을 때도 줄 높이를 유지해 깜빡임 방지 */
+  margin: 8px 0;
+  font-weight: 700;
+}
+
+.ud-hint.win {
+  color: #2f9e6f;
+}
+
+.ud-hint.lose {
+  color: #d9534f;
+}
+
+.ud-hint.warn {
+  color: #c99400;
+}
+
+.ud-history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ud-history li {
+  padding: 4px 0;
+  border-bottom: 1px dashed #e0e0e0;
+  font-size: 14px;
+}
+
 /* 업다운 게임 시작 버튼 */
 aside section button {
   display: block;

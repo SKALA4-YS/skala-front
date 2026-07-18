@@ -272,6 +272,33 @@ header h1 {
   font-size: 16px;
 }
 
+/* 미니 게임 결과 출력 박스 (grade·bag·upDown 공용) */
+#game-output:not(:empty) {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: 1px dashed #9aa5b1;
+  border-radius: 8px;
+}
+
+#game-output h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+/* 성적표 - 합격/불합격 문구 색상 */
+.grade-result {
+  margin: 10px 0 0 0;
+  font-weight: 700;
+}
+
+.grade-result.pass {
+  color: #2f9e6f;
+}
+
+.grade-result.fail {
+  color: #d9534f;
+}
+
 /* 업다운 게임 시작 버튼 */
 aside section button {
   display: block;

@@ -129,6 +129,42 @@ tbody tr:hover {
   min-width: 600px;
 }
 
+/* myProfile - 나를 설명하는 단어들 (dt | dd 를 Grid 2열 카드로) */
+.profile-dl {
+  margin: 0;
+}
+
+.profile-item {
+  display: grid;
+  grid-template-columns: 130px 1fr; /* 왼쪽 용어(dt) | 오른쪽 설명(dd) */
+  gap: 12px;
+  align-items: start;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fafbfc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* 카드에 마우스 올리면 살짝 떠오름 (myTrip 카드와 같은 결) */
+.profile-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.profile-item dt {
+  margin: 0;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.profile-item dd {
+  margin: 0;
+  color: #444444;
+}
+
 /* signUpResult - 가입 정보 요약표 (항목 | 내용 2열) */
 .summary-table th {
   width: 130px;
@@ -460,5 +496,11 @@ aside section button:hover {
   /* 5-2) myTrip - 여행 카드 3열 → 1열 */
   .trip-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* 5-3) myProfile - 용어|설명 2열 → 세로 1열 */
+  .profile-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 }

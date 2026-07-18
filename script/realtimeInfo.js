@@ -17,8 +17,9 @@ citySelect.addEventListener("change", async function () {
     return;
   }
 
-  // 데이터를 받아오는 동안 로딩 메시지 표시
-  weatherBox.innerHTML = "<p>실시간 날씨 로딩 중... ⏳</p>";
+  // 데이터를 받아오는 동안 로딩 스피너 표시 (fetch가 끝나면 결과로 교체됨)
+  weatherBox.innerHTML =
+    '<p class="loading"><span class="spinner"></span> 실시간 날씨 로딩 중...</p>';
 
   try {
     // 데이터 담당 모듈에 요청 (실제 fetch는 weatherAPI.js가 처리)

@@ -1,12 +1,16 @@
 # skala-front
 
+🔗 **배포 사이트**: https://skala4-ys.github.io/skala-front/
+
 SKALA 교육 과정에서 진행한 프론트엔드(HTML/CSS/JavaScript) 기초 실습 모음입니다.
 하나의 개인 포털 사이트를 만들어 가면서 배운 내용을 정리했고, 수업에서 다룬 요구사항 외에
 앞에서 만든 페이지에 나중에 배운 내용을 되돌려 적용하는 식으로 조금씩 살을 붙였습니다.
 
 ## 실행 방법
 
-`type="module"` 스크립트가 있어 `file://` 로 열면 CORS 때문에 막힙니다.
+바로 보려면 위의 [배포 사이트](https://skala4-ys.github.io/skala-front/)로 접속하면 됩니다.
+
+로컬에서 직접 실행하려면 — `type="module"` 스크립트가 있어 `file://` 로 열면 CORS 때문에 막힙니다.
 VS Code의 **Live Server** 확장으로 실행해 주세요.
 
 1. 이 저장소를 클론/다운로드

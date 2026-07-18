@@ -243,6 +243,21 @@ input[type="reset"]:hover {
   background-color: #838e9a;
 }
 
+/* 회원가입 유효성 검사 - 오류 안내 박스 (비어 있을 땐 숨김) */
+#signup-error:not(:empty) {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border: 1px solid #f0b8b8;
+  border-radius: 8px;
+  background-color: #fdeaea;
+  color: #b02a2a;
+}
+
+#signup-error ul {
+  margin: 6px 0 0 0;
+  padding-left: 20px;
+}
+
 /* 미션6-3) 페이지 로드 시 헤더 타이틀 페이드인 등장 애니메이션 */
 @keyframes fadeInDown {
   from {
